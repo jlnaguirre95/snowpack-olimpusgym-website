@@ -32,6 +32,14 @@
 
             .nav-item {
                 margin: 0 1rem;
+                
+                a {
+                    color: $light-color;
+
+                    &:active {
+                        color: $light-color
+                    }
+                }
             }
         }
 
