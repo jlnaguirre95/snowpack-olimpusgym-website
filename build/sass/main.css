@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap");
+/*Variables*/
+/*Mixins*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.6rem;
+  box-sizing: border-box;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+a:visited {
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+}
+.navbar__container {
+  width: 85%;
+  max-width: 1300;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.navbar__container .navbar__logo {
+  width: 100px;
+  height: 100%;
+  background-color: #f9032f;
+}
+.navbar__container .navbar__navigation {
+  flex: 1;
+  padding: 0 2rem;
+  color: #fff;
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .navbar__container .navbar__navigation {
+    display: none;
+  }
+}
+.navbar__container .navbar__navigation .nav-item {
+  margin: 0 1rem;
+}
+.navbar__container .navbar__button {
+  padding: 1rem 2.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: #f9032f;
+}
+@media screen and (max-width: 768px) {
+  .navbar__container .navbar__button {
+    display: none;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../assets/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.hero__container {
+  width: 85%;
+  max-width: 1300;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.hero__container .hero__content .hero__heading {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  color: #fff;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+.hero__container .hero__content .hero__heading--emphasis-line {
+  color: rgba(249, 3, 47, 0.7);
+}
+.hero__container .hero__content .hero__heading2 {
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  max-width: 450px;
+  padding: 1rem 2rem;
+  border: 3px solid rgba(249, 3, 47, 0.7);
+  position: absolute;
+  right: 5rem;
+  bottom: 5rem;
+}
+.hero__container .hero__content .hero__heading2--emphasis {
+  color: rgba(249, 3, 47, 0.7);
+}
+@media screen and (max-width: 768px) {
+  .hero__container .hero__content .hero__heading2 {
+    right: 0;
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    transform: scale(0.8);
+  }
+}
+
+.services {
+  padding: 10rem 0;
+}
+.services__container {
+  width: 85%;
+  max-width: 1300;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.services__container .services__content .services__opener-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.3rem;
+  color: #f9032f;
+  text-align: start;
+  text-transform: uppercase;
+}
+.services__container .services__content .services__heading {
+  font-size: clamp(3.5rem, 5vw, 5rem);
+  font-weight: 900;
+  font-style: normal;
+  color: #000;
+  text-align: start;
+  margin-bottom: 3rem;
+}
+.services__container .services__content .services__list .services__item {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.services__container .services__image {
+  width: 40vw;
+}
+.services__container .services__image img {
+  width: 100%;
+}

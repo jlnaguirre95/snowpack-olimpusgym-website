@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+
+    &:visited {
+        color: inherit;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

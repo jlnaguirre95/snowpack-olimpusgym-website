@@ -1,0 +1,37 @@
+.services {
+    padding: 10rem 0;
+
+    &__container {
+        @include container;
+        display: flex;
+        justify-content: space-evenly;
+
+        .services__content {
+            .services__opener-text {
+                @include opener-text;
+            }
+
+            .services__heading {
+                @include heading-text($dark-color, start);
+                margin-bottom: 3rem;
+            }
+
+            .services__list {
+                
+                .services__item {
+                    font-size: 2rem;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+
+        .services__image {
+            width: 40vw;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}   
+

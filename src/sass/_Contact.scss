@@ -1,0 +1,67 @@
+.contact {
+    height: 150px;
+    position: relative;
+
+    &__container {
+        @include container;
+        min-height: 300px;
+        padding: 3rem 1rem;
+        background: $red-color /* url('../assets/newsletter-bg.jpg') */;
+        background-position: top;
+        background-size: cover;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .contact__heading {
+            @include heading-text(black-color, center);
+            margin-bottom: 1rem;
+        }
+
+        .contact__speach {
+            @include title-text($light-color, center);
+            font-size: 2.5rem;
+            max-width: 500px;
+            margin-bottom: 3rem;
+
+            @media screen and (max-width: 768px) {
+                font-size: 1.6rem;
+            }
+        }
+
+        .contact__form {
+            width: 70%;
+
+            .contact__mail-input {
+                background-color: $light-color;
+                display: flex;
+
+                input {
+                    flex: 1;
+                    margin: 1.5rem 2.5rem;
+                }
+
+                .contact__button {
+                    @include button(uppercase);
+                    background-color: $dark-color;
+                    color: $light-color;
+                }
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+
+                    .contact__button {
+                        text-align: center;
+                    }
+                }
+            }
+
+            
+        }
+
+
+    }
+}

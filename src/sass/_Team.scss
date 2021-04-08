@@ -1,0 +1,74 @@
+.team {
+    padding: 8rem 0;
+
+    &__container {
+        @include container;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+
+        .team__column {
+
+            .team__text {
+                margin-bottom: 3rem;
+
+                .team__opener-text {
+                    @include opener-text;
+                }
+    
+                .team__heading {
+                    @include heading-text($dark-color, start);
+                    margin-bottom: 1rem;
+                }
+    
+                .team__description {
+                    font-size: clamp(1.6rem, 3vw, 2rem);
+                    line-height: 1.4;
+                }
+            }
+    
+            .team__trainer {
+                position: relative;
+                border-radius: 15px;
+    
+                &-name {
+                    font-size: 3rem;
+                    color: $light-color;
+                    font-weight: 700;
+                    position: absolute;
+                    bottom: 2.5rem;
+                    left: 2rem;
+                }
+            }
+    
+            .trainer-1 {
+                @include trainer-image(url('../assets/trainer-1.jpg'));
+                margin-bottom: 2rem;
+            }
+    
+            .trainer-2 {
+                @include trainer-image(url('../assets/trainer-2.jpg'));
+            }
+    
+            .trainer-3 {
+                @include trainer-image(url('../assets/trainer-3.jpg'));
+                margin-bottom: 2rem;
+            }
+    
+            .trainer-4 {
+                @include trainer-image(url('../assets/trainer-4.jpg'));
+                margin-bottom: 3rem;
+            }
+
+            @media screen and (max-width: 600px) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

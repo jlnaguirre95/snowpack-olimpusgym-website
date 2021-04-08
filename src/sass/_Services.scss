@@ -1,0 +1,53 @@
+.services {
+    padding: 10rem 0;
+
+    &__container {
+        @include container;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .services__content {
+            .services__opener-text {
+                @include opener-text;
+            }
+
+            .services__heading {
+                @include heading-text($dark-color, start);
+                margin-bottom: 3rem;
+            }
+
+            .services__list {
+                
+                .services__item {
+                    font-size: 2rem;
+                    margin-bottom: 3rem;
+
+                    i {
+                        color: $red-color;
+                        margin-right: 1rem;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 5rem;
+            }
+        }
+
+        .services__image {
+
+            img {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 5rem 0;
+    }
+}   
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <title>Olimpus Fitness GYM</title>
+    </head>
+    <body>
+        <div id="app">
+            
+            <!--Navbar-->
+            <nav class="navbar">
+                <div class="navbar__container">
+                    <div class="navbar__logo">
+                        <img src="./assets/SVG/logo.svg" alt="Olimpus GYM">
+                    </div>
+                    <ul class="navbar__navigation">
+                        <li class="nav-item"><a href="#">Home</a></li>
+                        <li class="nav-item"><a href="#services">Services</a></li>
+                        <li class="nav-item"><a href="#plans">Plans</a></li>
+                        <li class="nav-item"><a href="#trainers">Trainers</a></li>
+                    </ul>
+                    <a href="#" class="navbar__button animate-hero-y">Join us!</a>
+                    <button id="menu-button"><i class="fas fa-bars menu-icon"></i></button>
+                </div>
+                <div id="menu" class="navbar__menu navbar__menu--hidden">
+                    <button id="close-menu-btn"><i class="far fa-times navbar__close-btn"></i></button>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#plans">Plans</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                    </ul>
+                    <a href="#" class="navbar__button animate-hero-y">Join us!</a>
+                </div>
+            </nav>
+            
+            <!--Hero-->
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__heading">
+                            <span class="hero__heading--emphasis-line animate-hero-y">PUSH HARDER TODAY</span>
+                            <span class="hero__heading--normal-line animate-hero-y">IF YOU WANT A DIFERENT</span>
+                            <span class="hero__heading--emphasis-line animate-hero-y">TOMORROW!</span>
+                        </h1>
+                        <h3 class="hero__heading2 animate-hero-x">
+                            JOIN MEMBERSHIP NOW AND GET <span class="hero__heading2--emphasis">50% OFF</span>!
+                        </h3>
+                    </div>
+                </div>
+            </section>
+
+            <!--Services-->
+            <section id="services" class="services">
+                <div class="services__container">
+                    <div class="services__content">
+                        <span class="services__opener-text animate-services">Features</span>
+                        <h1 class="services__heading animate-services">What we offer</h1>
+                        <ul class="services__list">
+                            <li class="services__item animate-services">
+                                <i class="fas fa-check-circle"></i>
+                                Group fitness classes
+                            </li>
+                            <li class="services__item animate-services">
+                                <i class="fas fa-check-circle"></i>
+                                Personal Trainer Sessions
+                            </li>
+                            <li class="services__item animate-services">
+                                <i class="fas fa-check-circle"></i>
+                                Indoor Pool
+                            </li>
+                            <li class="services__item animate-services">
+                                <i class="fas fa-check-circle"></i>
+                                Steam room and sauna
+                            </li>
+                            <li class="services__item animate-services">
+                                <i class="fas fa-check-circle"></i>
+                                Basketball court
+                            </li>
+                            <li class="services__item animate-services">
+                                <i class="fas fa-check-circle"></i>
+                                Open 24/7
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="services__image animate-services-img">
+                        <img src="./assets/lux-gym-1.jpg" alt="services">
+                    </div>
+                </div>
+            </section>
+
+            <!--Membership plans-->
+            <section id="plans" class="membership">
+                <div class="membership__container">
+                    <div class="membership__head">
+                        <h1 class="membership__heading animate-membership">View our Plans</h1>
+                        <strong class="membership__speach animate-membership">Get started today and receive 50% off your first month</strong>
+                    </div>
+                    <div class="membership__plans">
+                        <article class="plan-item animate-membership-card">
+                            <div class="plan-item__head">
+                                <i class="fas fa-feather-alt"></i>
+                                <h2>Mortal</h2>
+                            </div>
+                            <ul class="plan-item__features">
+                                <li>Get access to the entire gym.</li>
+                                <li>loan of accessories</li>
+                                <li class="plan-item__features--not-included">Group fitness classes</li>
+                                <li class="plan-item__features--not-included">Private personal training</li>
+                            </ul>
+                            <strong class="plan-item__price">$99 <span>month</span></strong>
+                            <a href="#" class="plan-item__button">Get Now</a>
+                        </article>
+                        <article class="plan-item animate-membership-card">
+                            <div class="plan-item__head">
+                                <i class="fas fa-dragon"></i>
+                                <h2>Dragon</h2>
+                            </div>
+                            <ul class="plan-item__features">
+                                <li>Get access to the entire gym.</li>
+                                <li>loan of accessories</li>
+                                <li>Group fitness classes</li>
+                                <li class="plan-item__features--not-included">Private personal training</li>
+                            </ul>
+                            <strong class="plan-item__price">$99 <span>month</span></strong>
+                            <a href="#" class="plan-item__button">Get Now</a>
+                        </article>
+                        <article class="plan-item animate-membership-card">
+                            <div class="plan-item__head">
+                                <i class="fas fa-crown"></i>
+                                <h2>God</h2>
+                            </div>
+                            <ul class="plan-item__features">
+                                <li>Get access to the entire gym.</li>
+                                <li>loan of accessories</li>
+                                <li>Group fitness classes</li>
+                                <li>Private personal training</li>
+                            </ul>
+                            <strong class="plan-item__price">$99 <span>month</span></strong>
+                            <a href="#" class="plan-item__button">Get Now</a>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!--Team Section-->
+            <section id="trainers" class="team">
+                <div class="team__container">
+                    <div class="team__column">
+                        <div class="team__text animate-team">
+                            <span class="team__opener-text">Private coaching</span>
+                            <h1 class="team__heading">Meet our Trainers</h1>
+                            <p class="team__description">All our personal trainers have over 30 years of experience combined. Each trainer specializes in strength and mobility workouts</p>
+                        </div>
+                        <div class="team__trainer trainer-1 animate-team">
+                            <span class="team__trainer-name">George</span>
+                        </div>
+                        <div class="team__trainer trainer-2 animate-team">
+                            <span class="team__trainer-name">Jess</span>
+                        </div>
+                    </div>
+                    <div class="team__column">
+                        <div class="team__trainer trainer-3 animate-team">
+                            <span class="team__trainer-name">Alison</span>
+                        </div>
+                        <div class="team__trainer trainer-4 animate-team">
+                            <span class="team__trainer-name">Max</span>
+                        </div>
+                        <div class="team__text animate-team">
+                            <span class="team__opener-text">Free trial</span>
+                            <h1 class="team__heading">7 Day Trial</h1>
+                            <p class="team__description">You can work with each trainer for up to 7 days for free in order to see if they are a good fit for your goals.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--Contact box-->
+            <div class="contact">
+                <div class="contact__container animate-contact-box">
+                    <h1 class="contact__heading animate-contact">Newsletter</h1>
+                    <span class="contact__speach animate-contact">Subscribe to our newsletter to receive offers and new information about our gym.</span>
+                    <form action="" class="contact__form animate-contact">
+                        <div class="contact__mail-input">
+                            <input type="text" placeholder="Your Email">
+                            <a href="#" class="contact__button">Submit</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!--Footer-->
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__description">
+                        <div class="footer__logo">
+                            <img src="./assets/SVG/logo.svg" alt="Olimpus GYM">
+                        </div>
+                        <strong class="footer__speach">Luxury GYM located in downtown Miami</strong>
+                        <small class="footer__phone">Tel: 305 - 123 - 4567</small>
+                    </div>
+                    <div class="footer__links">
+                        <div class="footer__links-column">
+                            <h2 class="footer__title-column">Contact us</h2>
+                            <a href="#">Contact</a>
+                            <a href="#">Support</a>
+                            <a href="#">Sponsorships</a>
+                        </div>
+                        <div class="footer__links-column">
+                            <h2 class="footer__title-column">Memberships</h2>
+                            <a href="#">Pricing</a>
+                            <a href="#">Plans</a>
+                            <a href="#">FAQ</a>
+                        </div>
+                        <div class="footer__links-column">
+                            <h2 class="footer__title-column">Social Media</h2>
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Youtube</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+        <script type="module" src="index.js"></script>
+    </body>
+</html>

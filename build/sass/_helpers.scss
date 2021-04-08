@@ -1,0 +1,53 @@
+/*Variables*/
+$red-color: #f9032f;
+$dark-color: #000;
+$light-color: #fff;
+
+/*Mixins*/
+@mixin hero-text($color, $text-align) {
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+    color: $color;
+    text-align: $text-align;
+}
+
+@mixin opener-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.3rem;
+    color: $red-color;
+    text-align: start;
+    text-transform: uppercase;
+}
+
+@mixin heading-text($color, $text-align) {
+    font-size: clamp(3.5rem, 5vw, 5rem);
+    font-weight: 900;
+    font-style: normal;
+    color: $color;
+    text-align: $text-align;
+}
+
+@mixin title-text($color, $text-align) {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    color: $color;
+    text-align: $text-align;
+}
+
+@mixin container {
+    width: 85%;
+    max-width: 1300;
+    margin: 0 auto;
+}
+
+@mixin button($text-transform) {
+    padding: 1rem 2.5rem;
+    color: $light-color;
+    text-transform: $text-transform;
+    background-color: $red-color;  
+}
